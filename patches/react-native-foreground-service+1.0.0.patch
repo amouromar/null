@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java b/node_modules/react-native-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java
+index b247735..eb81e34 100644
+--- a/node_modules/react-native-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java
++++ b/node_modules/react-native-foreground-service/android/src/main/java/com/supersami/foregroundservice/NotificationHelper.java
+@@ -120,7 +120,7 @@ class NotificationHelper {
+             .setOngoing(bundle.getBoolean("ongoing", false))
+             .setContentText(bundle.getString("message"));
+        if(bundle.getBoolean("button", false) == true){
+-           notificationBuilder.addAction(R.drawable.redbox_top_border_background, bundle.getString("buttonText", "Button"), pendingBtnIntent);
++           notificationBuilder.addAction(android.R.drawable.ic_menu_info_details, bundle.getString("buttonText", "Button"), pendingBtnIntent);
+        }
+ 
+ 

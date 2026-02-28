@@ -9,7 +9,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "storybook-generate": "sb-rn-get-stories"
+    "storybook-generate": "sb-rn-get-stories",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@babel/core": "^7.29.0",
@@ -67,6 +68,8 @@
     "@types/react": "~19.1.0",
     "eslint": "^9.39.3",
     "eslint-config-expo": "~10.0.0",
+    "patch-package": "^8.0.1",
+    "postinstall-postinstall": "^2.1.0",
     "typescript": "~5.9.2"
   },
   "private": true
